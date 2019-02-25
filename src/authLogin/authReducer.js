@@ -8,7 +8,7 @@ const initialState = {
     error : null,
 }
 
-const reducer = (state = initialState, action) => {
+const auth_reducer = (state = initialState, action) => {
     switch(action.type){
         case actionTypes.AUTH_START:
         return{...state,  loading:true};
@@ -24,4 +24,4 @@ const reducer = (state = initialState, action) => {
 
 };
 
-export default reducer;
+export default auth_reducer;

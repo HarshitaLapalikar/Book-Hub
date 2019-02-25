@@ -6,9 +6,9 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { BrowserRouter , Route } from 'react-router-dom';
 import App from './App';
 import {Provider} from 'react-redux';
-import reducer from './authLogin/authReducer'
+import reducer from './reducer/reducer.index'
 import * as serviceWorker from './serviceWorker';
-import Search from './searchPage/Searchpage';
+import Search from './searchPage/screen/Searchpage';
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
